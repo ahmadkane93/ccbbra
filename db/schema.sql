@@ -109,8 +109,6 @@ CREATE TABLE reservation (
     -- Set foreign keys --
     customer_id INTEGER NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES customer(id),
-    accounting_id INTEGER NOT NULL,
-    FOREIGN KEY (accounting_id) REFERENCES accounting(id),
     vehicle_id INTEGER NOT NULL,
     FOREIGN KEY (vehicle_id) REFERENCES vehicle(id)
 );
