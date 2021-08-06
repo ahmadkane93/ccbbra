@@ -16,9 +16,9 @@ CREATE TABLE agency (
     address VARCHAR(30) NOT NULL,
     city VARCHAR (10) NOT NULL,
     state VARCHAR (2) NOT NULL,
-    zip INTEGER (5) NOT NULL,
-    phone INTEGER (10), NOT NULL
-    fax INTEGER (10),
+    zip INTEGER NOT NULL,
+    phone INTEGER NOT NULL,
+    fax INTEGER,
     email VARCHAR(30)
 );
 
@@ -32,8 +32,8 @@ CREATE TABLE employee (
     address VARCHAR(30) NOT NULL,
     city VARCHAR (10) NOT NULL,
     state VARCHAR (2) NOT NULL,
-    zip INTEGER (5) NOT NULL,
-    phone INTEGER (10), NOT NULL,
+    zip INTEGER NOT NULL,
+    phone INTEGER NOT NULL,
     email VARCHAR(30),
     -- Employee company data --
     title VARCHAR(30),
@@ -53,14 +53,9 @@ CREATE TABLE customer (
     address VARCHAR(30) NOT NULL,
     city VARCHAR (10) NOT NULL,
     state VARCHAR (2) NOT NULL,
-    zip INTEGER (5) NOT NULL,
-    phone INTEGER (10), NOT NULL,
-    email VARCHAR(30),
-    -- Set foreign keys -- 
-    accounting_id INTEGER NOT NULL,
-    FOREIGN KEY (accounting_id) REFERENCES accounting(id),
-    reservation_id INTEGER NOT NULL,
-    FOREIGN KEY (reservation_id) REFERENCES reservation(id)    
+    zip INTEGER NOT NULL,
+    phone INTEGER NOT NULL,
+    email VARCHAR(30)
 );
 
 CREATE TABLE accounting (
@@ -70,13 +65,31 @@ CREATE TABLE accounting (
     -- Financial data --
     cardholder_name VARCHAR(30) NOT NULL,
     card_type VARCHAR(10) NOT NULL,
-    card_number INTEGER(30) NOT NULL,
-    expiration_dt INTEGER(4) NOT NULL,
-    ccv INTEGER(3),
-    card_zipcode INTEGER(5),
+    card_number INTEGER NOT NULL,
+    expiration_dt INTEGER NOT NULL,
+    ccv INTEGER,
+    card_zipcode INTEGER,
     -- Set foreign keys --
     customer_id INTEGER NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES customer(id)
+);
+
+CREATE TABLE vehicle (
+    -- Set Primary Key --
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (id),
+    -- Vehicle data --
+    make VARCHAR(10) NOT NULL,
+    model VARCHAR(10) NOT NULL,
+    model_year CHAR(4) NOT NULL,
+    vehicle_type VARCHAR(10) NOT NULL,
+    vin VARCHAR(30) NOT NULL,
+    current_mileage INTEGER,
+    last_service_dt DATETIME,
+    company_insured BOOLEAN NOT NULL,
+    -- Set foreign keys -- 
+    agency_id INTEGER NOT NULL,
+    FOREIGN KEY (agency_id) REFERENCES agency(id)
 );
 
 CREATE TABLE reservation (
@@ -96,26 +109,8 @@ CREATE TABLE reservation (
     -- Set foreign keys --
     customer_id INTEGER NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES customer(id),
+    accounting_id INTEGER NOT NULL,
+    FOREIGN KEY (accounting_id) REFERENCES accounting(id),
     vehicle_id INTEGER NOT NULL,
     FOREIGN KEY (vehicle_id) REFERENCES vehicle(id)
-);
-
-CREATE TABLE vehicle (
-    -- Set Primary Key --
-    id INTEGER NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY (id),
-    -- Vehicle data --
-    make VARCHAR(10) NOT NULL,
-    model VARCHAR(10) NOT NULL,
-    model_year DATE(4) NOT NULL,
-    vehicle_type VARCHAR(10) NOT NULL,
-    vin VARCHAR(30) NOT NULL,
-    current_mileage INTEGER(7),
-    last_service_dt DATETIME,
-    company_insured BOOLEAN NOT NULL,
-    -- Set foreign keys -- 
-    agency_id INTEGER NOT NULL,
-    FOREIGN KEY (agency_id) REFERENCES agency(id),
-    reservation_id INTEGER NOT NULL,
-    FOREIGN KEY (reservation_id) REFERENCES reservation(id)  
 );
