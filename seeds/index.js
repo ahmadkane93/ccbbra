@@ -12,8 +12,8 @@ const seedDatabase = async () => {
     await sequelize.async({ force: true });
 
     const agency = await Agency.bulkCreate(agencyData, {
-         
- 
+         individualHooks: true,
+         returning: true, 
     });
 
     process.exit(0);
