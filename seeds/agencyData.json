@@ -1,11 +1,42 @@
 [
     {
-
+        "agencyName" : "Dayton International Airport",
+        "address" : "3600 Terminal Rd",
+        "city" : "Vandalia",
+        "state" : "OH",
+        "zip" : "45377",
+        "phone" : "937-264-2626",
+        "fax" : "833-445-1510",
+        "email" : "dayton@ccbbra.com"
     },
     {
-
+        "agencyName" : "Columbus John Glenn Intl. Airport",
+        "address" : "4600 International Gateway",
+        "city" : "Columbus",
+        "state" : "OH",
+        "zip" : "43219",
+        "phone" : "614-239-3200",
+        "fax" : "833-445-1510",
+        "email" : "columbus@ccbbra.com"
     },
     {
-
+        "agencyName" : "Cleveland Hopkins International Airport",
+        "address" : "19601 Maplewood Ave",
+        "city" : "Cleveland",
+        "state" : "OH",
+        "zip" : "44135",
+        "phone" : "216-251-7119",
+        "fax" : "833-511-1749",
+        "email" : "cleveland@ccbbra.com"
+    },
+    {
+        "agencyName" : "Cincinnati-Northern Kentucky Intl. Airport",
+        "address" : "3230 Loomis Rd",
+        "city" : "Hebron",
+        "state" : "KY",
+        "zip" : "41048",
+        "phone" : "513-751-0200",
+        "fax" : "844-913-0728",
+        "email" : "cincinnati@ccbbra.com"
     }
 ]

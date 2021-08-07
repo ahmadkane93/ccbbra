@@ -1,5 +1,5 @@
 // Requirements
-import sequelize from '../config/connection';
+const sequelize = require('../config/connection');
 const { Accounting, Agency, Customer } = require('../models');
 
 // Data Objects
