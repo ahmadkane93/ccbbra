@@ -1,8 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+class vehicle extends Model{}
 
-vehical.init(
+vehicle.init(
 {
 
     id: {
@@ -51,8 +52,8 @@ vehical.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'vehical',
+    modelName: 'vehicle',
   }
 ) 
 
-module.exports = vehical;
+module.exports = vehicle;

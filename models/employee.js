@@ -1,9 +1,9 @@
 const { Model,DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class customer extends Model{}
+class employee extends Model{}
 
-customer.init(
+employee.init(
 {
 
     id: {
@@ -44,13 +44,20 @@ customer.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
-    password:{
+    title:{
         type: DataTypes.STRING,
         allowNull:false,
-        validate: {
-            len: [8]
-        }
-    }
+    },
+    salary:{
+        type: DataTypes.DECIMAL
+    },
+    agency_id:{
+        type: DataTypes.INTEGER,
+        reference: {
+            modle: 'agency',
+            key: 'id'
+        },
+    },
 
 },
 {
@@ -59,8 +66,8 @@ customer.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'customer',
+    modelName: 'employee',
   }
 ); 
 
-module.exports = customer;
+module.exports = employee;
