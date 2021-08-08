@@ -16,7 +16,14 @@ const reservationData = require('./reservationData.json');
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
-    await agency.bulkCreate(agencyData)
+    await agency.bulkCreate(agencyData);
+    await employee.bulkCreate(employeeData);
+    await customer.bulkCreate(customerData);
+    await accounting.bulkCreate(accountingData);
+    await vehicle.bulkCreate(vehicleData);
+    await reservation.bulkCreate(reservationData);
+
+
 
     process.exit(0);
 };

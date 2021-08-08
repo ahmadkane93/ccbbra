@@ -30,27 +30,27 @@ reservation.init(
 
     },
     has_pet:{
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     include_gps:{
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     include_insurance:{
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     daily_rate_insurance:{
-        type: DataTypes.DECIMAL,
+        type: DataTypes.STRING,
         allowNull: true,
     },
     fuel_prepay:{
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     daily_rate_rental:{
-        type: DataTypes.DECIMAL,
+        type: DataTypes.STRING,
 
         allowNull:false,
     },

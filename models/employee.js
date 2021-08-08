@@ -38,7 +38,7 @@ employee.init(
         allowNull: false,
     },
     phone:{
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     email:{
@@ -51,7 +51,7 @@ employee.init(
         allowNull:false,
     },
     salary:{
-        type: DataTypes.DECIMAL
+        type: DataTypes.INTEGER
     },
     agency_id:{
         type: DataTypes.INTEGER,
