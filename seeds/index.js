@@ -1,20 +1,19 @@
 // Requirements
 const sequelize = require('../config/connection');
-const { Accounting, Agency, Customer } = require('../models');
+const { agency} = require('../models');
+
+
 
 // Data Objects
-const accountingData = require('./accountingData.json');
+// const accountingData = require('./accountingData.json');
 const agencyData = require('./agencyData.json');
-const customerData = require('./customerData.json');
+// const customerData = require('./customerData.json');
 
 // Seed Database Tables
 const seedDatabase = async () => {
-    await sequelize.async({ force: true });
+    await sequelize.sync({ force: true });
 
-    const agency = await Agency.bulkCreate(agencyData, {
-         individualHooks: true,
-         returning: true, 
-    });
+    await agency.bulkCreate(agencyData)
 
     process.exit(0);
 };
