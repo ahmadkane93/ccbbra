@@ -1,3 +1,4 @@
+
 const { Model,DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -42,6 +43,7 @@ employee.init(
     },
     email:{
         type: DataTypes.STRING,
+
         allowNull: false,
     },
     title:{
@@ -58,7 +60,6 @@ employee.init(
             key: 'id'
         },
     },
-
 },
 {
 
@@ -68,6 +69,8 @@ employee.init(
     underscored: true,
     modelName: 'employee',
   }
+
 ); 
+
 
 module.exports = employee;

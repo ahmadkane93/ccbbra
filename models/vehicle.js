@@ -24,7 +24,7 @@ vehicle.init(
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    vehical_type:{
+    vehicle_type:{
         type: DataTypes.STRING,
         allowNull: false,
     },

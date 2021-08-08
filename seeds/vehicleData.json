@@ -1,11 +1,112 @@
 [
     {
-
+        "make" : "Bentley",
+        "model" : "Continentel",
+        "model_year" : "2020",
+        "vehicle_type" : "Luxury",    
+        "vin" : "WDDHF5KB5DA766633",
+        "current_mileage" : "71434",
+        "last_service_dt" : "03/10/2021",
+        "company_insured" : "Y",
+        "agency_id" : "1"
     },
     {
-
+        "make" : "Mitsubishi",
+        "model" : "Mirage",
+        "model_year" : "2019",
+        "vehicle_type" : "Economy",
+        "vin" : "2D8HN54P98R880501",
+        "current_mileage" : "33216",
+        "last_service_dt" : "01/06/2021",
+        "company_insured" : "Y",
+        "agency_id" : "1"
     },
     {
-
+        "make" : "Mercedes-Benz",
+        "model" : "C350",
+        "model_year" : "2021",
+        "vehicle_type" : "Luxury",
+        "vin" : "WDBUH65J34A311211",
+        "current_mileage" : "39448",
+        "last_service_dt" : "05/28/2021",
+        "company_insured" : "Y",
+        "agency_id" : "2"
+    },
+    {
+        "make" : "Nissan",
+        "model" : "Versa",
+        "model_year" : "2021",
+        "vehicle_type" : "Compact",
+        "vin" : "1FTJW35F3VEB14862",
+        "current_mileage" : "40554",
+        "last_service_dt" : "01/11/2021",
+        "company_insured" : "Y",
+        "agency_id" : "2"
+    },
+    {
+        "make" : "Toyota",
+        "model" : "Corolla",
+        "model_year" : "2020",
+        "vehicle_type" : "Midsize",
+        "vin" : "1GYFK13259R280055",
+        "current_mileage" : "27315",
+        "last_service_dt" : "03/30/2021",
+        "company_insured" : "Y",
+        "agency_id" : "2"
+    },
+    {
+        "make" : "Volkswagen",
+        "model" : "Jetta",
+        "model_year" : "2020",
+        "vehicle_type" : "Standard",
+        "vin" : "3GCPKSE34BG115416",
+        "current_mileage" : "32436",
+        "last_service_dt" : "06/28/2021",
+        "company_insured" : "Y",
+        "agency_id" : "3"
+    },
+    {
+        "make" : "Dodge",
+        "model" : "Challenger",
+        "model_year" : "2021",
+        "vehicle_type" : "Sport",
+        "vin" : "2GNALBEK5E6155893",
+        "current_mileage" : "32595",
+        "last_service_dt" : "06/30/2021",
+        "company_insured" : "Y",
+        "agency_id" : "3"
+    },
+    {
+        "make" : "Ford",
+        "model" : "Mustang",
+        "model_year" : "2020",
+        "vehicle_type" : "Convertible",
+        "vin" : "WBAWL73529P462935",
+        "current_mileage" : "70600",
+        "last_service_dt" : "06/09/2021",
+        "company_insured" : "Y",
+        "agency_id" : "4"
+    },
+    {
+        "make" : "Chevrolet",
+        "model" : "Colorado",
+        "model_year" : "2020",
+        "vehicle_type" : "Midsize Truck",
+        "vin" : "3MZBM1U77EM189760",
+        "current_mileage" : "45147",
+        "last_service_dt" : "07/21/2021",
+        "company_insured" : "Y",
+        "agency_id" : "4"
+    },
+    {
+        "make" : "Chrysler",
+        "model" : "300",
+        "model_year" : "2020",
+        "vehicle_type" : "Luxury",
+        "vin" : "1GKES12S446182359",
+        "current_mileage" : "35145",
+        "last_service_dt" : "07/06/2021",
+        "company_insured" : "Y",
+        "agency_id" : "4"
     }
 ]
