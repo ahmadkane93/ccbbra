@@ -1,11 +1,102 @@
 [
     {
-
+        "first_name" : "Jan",
+        "last_name" : "Smith",
+        "address" : "4925 Wilkinson Court",
+        "city" : "Naples",
+        "state" : "FL",
+        "zip" : "33962",
+        "phone" : "239-775-5634",
+        "email" : "JanRSmith@teleworm.us"
     },
     {
-
+        "first_name" : "Michael",
+        "last_name" : "Bullard",
+        "address" : "2261 Conference Center Way",
+        "city" : "Springville",
+        "state" : "PA",
+        "zip" : "18844",
+        "phone" : "570-965-5720",
+        "email" : "MichaelMBullard@dayrep.com"
     },
     {
-
+        "first_name" : "Eric",
+        "last_name" : "Stehle",
+        "address" : "1282 Hickory Heights Drive",
+        "city" : "Baltimore",
+        "state" : "MD",
+        "zip" : "21201",
+        "phone" : "443-989-3851",
+        "email" : "EricRStehle@dayrep.com"
+    },
+    {
+        "first_name" : "Wendell",
+        "last_name" : "Lister",
+        "address" : "1188 Benedum Drive",
+        "city" : "Wappingers Falls",
+        "state" : "NY",
+        "zip" : "12590",
+        "phone" : "845-297-3320",
+        "email" : "WendellTLister@teleworm.us"
+    },
+    {
+        "first_name" : "Evelyn",
+        "last_name" : "Smith",
+        "address" : "1515 Quiet Valley Lane",
+        "city" : "Calabasas",
+        "state" : "CA",
+        "zip" : "91302",
+        "phone" : "818-878-7761",
+        "email" : "EvelynNSmith@rhyta.com"
+    },
+    {
+        "first_name" : "Jessica",
+        "last_name" : "Ryans",
+        "address" : "1459 Charter Street",
+        "city" : "Kansas City",
+        "state" : "KS",
+        "zip" : "64106",
+        "phone" : "913-713-0539",
+        "email" : "JessicaRRyans@jourrapide.com"
+    },
+    {
+        "first_name" : "Stephen",
+        "last_name" : "Morgan",
+        "address" : "185 Turnpike Drive",
+        "city" : "Huntsville",
+        "state" : "AL",
+        "zip" : "35801",
+        "phone" : "256-436-3045",
+        "email" : "StephenJMorgan@dayrep.com"
+    },
+    {
+        "first_name" : "John",
+        "last_name" : "Elsberry",
+        "address" : "2169 Honeysuckle Lane",
+        "city" : "Seattle",
+        "state" : "WA",
+        "zip" : "98119",
+        "phone" : "360-525-5120",
+        "email" : "JohnMElsberry@armyspy.com"
+    },
+    {
+        "first_name" : "Mandy",
+        "last_name" : "Thomas",
+        "address" : "2450 Twin Oaks Drive",
+        "city" : "Traverse City",
+        "state" : "MI",
+        "zip" : "49684",
+        "phone" : "231-383-8687",
+        "email" : "MandyAThomas@armyspy.com"
+    },
+    {
+        "first_name" : "Kathleen",
+        "last_name" : "Dutton",
+        "address" : "3522 Creekside Lane",
+        "city" : "Santa Barbara",
+        "state" : "CA",
+        "zip" : "93105",
+        "phone" : "805-687-2408",
+        "email" : "KathleenKDutton@armyspy.com"
     }
 ]

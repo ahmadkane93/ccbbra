@@ -1,11 +1,54 @@
 [
     {
-
+        "first_name" : "John",
+        "last_name" : "Rodriguez",
+        "address" : "1591 Canis Heights Drive",
+        "city" : "Springfield",
+        "state" : "OH",
+        "zip" : "45505",
+        "phone" : "937-555-4800",
+        "email" : "jrodriguez@gmail.com",
+        "title" : "Manager",
+        "salary" : "",
+        "agency_id" : "1"
     },
     {
-
+        "first_name" : "Susana",
+        "last_name" : "Franz",
+        "address" : "1899 Johnny Lane",
+        "city" : "Plain City",
+        "state" : "OH",
+        "zip" : "43064",
+        "phone" : "614-555-5900",
+        "email" : "sfranz@gmail.com",
+        "title" : "Manager",
+        "salary" : "",
+        "agency_id" : "2"
     },
     {
-
+        "first_name" : "Thomas",
+        "last_name" : "Reese",
+        "address" : "3681 Yorkshire Circle",
+        "city" : "Cleveland",
+        "state" : "OH",
+        "zip" : "44106",
+        "phone" : "216-555-6100",
+        "email" : "treese@gmail.com",
+        "title" : "Manager",
+        "salary" : "",
+        "agency_id" : "3"
+    },
+    {
+        "first_name" : "Mary",
+        "last_name" : "Reed",
+        "address" : "4341 Graystone Lakes",
+        "city" : "Covington",
+        "state" : "KY",
+        "zip" : "41017",
+        "phone" : "859-555-7200",
+        "email" : "mreed@gmail.com",
+        "title" : "Manager",
+        "salary" : "",
+        "agency_id" : "4"
     }
 ]

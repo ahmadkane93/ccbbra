@@ -1,11 +1,92 @@
 [
     {
-
+        "cardholder_name" : "Jan R. Smith",
+        "card_type" : "MasterCard",
+        "card_number" : "5331 5418 7409 5146",
+        "expiration_dt" : "10/22",
+        "ccv" : "251",
+        "card_zipcode" : "33962",
+        "customer_id" : "1"
     },
     {
-
+        "cardholder_name" : "Michael N. Bullard",
+        "card_type" : "MasterCard",
+        "card_number" : "5365 5296 2330 3969",
+        "expiration_dt" : "05/24",
+        "ccv" : "526",
+        "card_zipcode" : "18844",
+        "customer_id" : "2"
     },
     {
-
+        "cardholder_name" : "Eric O. Stehle",
+        "card_type" : "MasterCard",
+        "card_number" : "5230 7724 5322 4227",
+        "expiration_dt" : "05/22",
+        "ccv" : "669",
+        "card_zipcode" : "21201",
+        "customer_id" : "3"
+    },
+    {
+        "cardholder_name" : "Wendell P. Lister",
+        "card_type" : "MasterCard",
+        "card_number" : "5257 0030 6451 7280",
+        "expiration_dt" : "11/25",
+        "ccv" : "741",
+        "card_zipcode" : "12590",
+        "customer_id" : "4"
+    },
+    {
+        "cardholder_name" : "Evelyn Q. Smith",
+        "card_type" : "MasterCard",
+        "card_number" : "",
+        "expiration_dt" : "",
+        "ccv" : "",
+        "card_zipcode" : "91302",
+        "customer_id" : "5"
+    },
+    {
+        "cardholder_name" : "Jessica R. Ryans",
+        "card_type" : "MasterCard",
+        "card_number" : "",
+        "expiration_dt" : "",
+        "ccv" : "",
+        "card_zipcode" : "64106",
+        "customer_id" : "6"
+    },
+    {
+        "cardholder_name" : "Stephen S. Morgan",
+        "card_type" : "MasterCard",
+        "card_number" : "",
+        "expiration_dt" : "",
+        "ccv" : "",
+        "card_zipcode" : "35801",
+        "customer_id" : "7"
+    },
+    {
+        "cardholder_name" : "John T. Elsberry",
+        "card_type" : "MasterCard",
+        "card_number" : "",
+        "expiration_dt" : "",
+        "ccv" : "",
+        "card_zipcode" : "98119",
+        "customer_id" : "8"
+    },
+    {
+        "cardholder_name" : "Mandy U. Thomas",
+        "card_type" : "MasterCard",
+        "card_number" : "",
+        "expiration_dt" : "",
+        "ccv" : "",
+        "card_zipcode" : "49684",
+        "customer_id" : "9"
+    }
+    {
+        "cardholder_name" : "Kathleen V. Dutton",
+        "card_type" : "MasterCard",
+        "card_number" : "",
+        "expiration_dt" : "",
+        "ccv" : "",
+        "card_zipcode" : "93105",
+        "customer_id" : "10"
     }
 ]

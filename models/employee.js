@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 
-vehicle.init(
+employee.init(
 {
 
     id: {
@@ -11,39 +11,50 @@ vehicle.init(
         primaryKey: true,
         autoIncrement: true,
     },
-    make:{
+    first_name:{
         type: DataTypes.STRING,
         allowNull: false,
     },
-    model:{
+    last_name:{
         type: DataTypes.STRING,
         allowNull: false,
     },
-    model_year:{
+    address:{
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    city:{
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    state:{
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    zip:{
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    vehicle_type:{
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    vin:{
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    current_milage:{
+    phone:{
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    last_service_dt:{
-        type: DataTypes.DATEONLY,
-        allowNull: false,
-    },
-    agency_id:{
+    email:{
         type: DataTypes.STRING,
         allowNull: true,
     },
-
+    title:{
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
+    salary:{
+        type: DataTypes.DECIMAL,
+        allowNull: true,
+    },
+    agency_id:{
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
 },
 {
 
@@ -51,8 +62,8 @@ vehicle.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'vehical',
+    modelName: 'employee',
   }
 ) 
 
-module.exports = vehical;
+module.exports = employee;
