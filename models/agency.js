@@ -1,6 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+class agency extends Model{}
+
 
 agency.init(
 {
@@ -32,7 +34,7 @@ agency.init(
         allowNull: false,
     },
     phone:{
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     fax:{

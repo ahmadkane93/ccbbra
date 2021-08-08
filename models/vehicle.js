@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+class vehicle extends Model{}
 
 vehicle.init(
 {
@@ -51,8 +52,8 @@ vehicle.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'vehical',
+    modelName: 'vehicle',
   }
 ) 
 
-module.exports = vehical;
+module.exports = vehicle;

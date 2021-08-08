@@ -1,6 +1,8 @@
-const { Model, DataTypes } = require('sequelize');
+
+const { Model,DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+class employee extends Model{}
 
 employee.init(
 {
@@ -41,19 +43,22 @@ employee.init(
     },
     email:{
         type: DataTypes.STRING,
-        allowNull: true,
+
+        allowNull: false,
     },
     title:{
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull:false,
     },
     salary:{
-        type: DataTypes.DECIMAL,
-        allowNull: true,
+        type: DataTypes.DECIMAL
     },
     agency_id:{
         type: DataTypes.INTEGER,
-        allowNull: false,
+        reference: {
+            modle: 'agency',
+            key: 'id'
+        },
     },
 },
 {
@@ -64,6 +69,8 @@ employee.init(
     underscored: true,
     modelName: 'employee',
   }
-) 
+
+); 
+
 
 module.exports = employee;

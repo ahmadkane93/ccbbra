@@ -1,5 +1,9 @@
-const { Model, DataTypes } = require('sequelize');
+
+const { Model,DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const vehicle = require('./vehicle');
+
+class reservation extends Model{}
 
 
 reservation.init(
@@ -16,12 +20,14 @@ reservation.init(
         allowNull: false,
     },
     start_dt:{
+
         type: DataTypes.DATETIME,
         allowNull: true,
     },
     end_dt:{
         type: DataTypes.DATETIME,
         allowNull: true,
+
     },
     has_pet:{
         type: DataTypes.BOOLEAN,
@@ -45,16 +51,25 @@ reservation.init(
     },
     daily_rate_rental:{
         type: DataTypes.DECIMAL,
-        allowNull: false,
-    },
-    customer_id:{
-        type: DataTypes.INTEGER,
-        allowNull: false,
+
+        allowNull:false,
     },
     agency_id:{
         type: DataTypes.INTEGER,
-        allowNull: false,
+        reference: {
+            modle: 'agency',
+            key: 'id'
+        },
     },
+    vehical_id: {
+        type:DataTypes.INTEGER,
+        reference: {
+            model: 'vehicle',
+            key: 'id'
+        }
+    }
+
+
 },
 {
 
@@ -64,6 +79,7 @@ reservation.init(
     underscored: true,
     modelName: 'reservation',
   }
-) 
+
+); 
 
 module.exports = reservation;
