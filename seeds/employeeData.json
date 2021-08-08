@@ -9,7 +9,7 @@
         "phone" : "937-555-4800",
         "email" : "jrodriguez@gmail.com",
         "title" : "Manager",
-        "salary" : "",
+        "salary" : "1",
         "agency_id" : "1"
     },
     {
@@ -22,7 +22,7 @@
         "phone" : "614-555-5900",
         "email" : "sfranz@gmail.com",
         "title" : "Manager",
-        "salary" : "",
+        "salary" : "1",
         "agency_id" : "2"
     },
     {
@@ -35,7 +35,7 @@
         "phone" : "216-555-6100",
         "email" : "treese@gmail.com",
         "title" : "Manager",
-        "salary" : "",
+        "salary" : "1",
         "agency_id" : "3"
     },
     {
@@ -48,7 +48,7 @@
         "phone" : "859-555-7200",
         "email" : "mreed@gmail.com",
         "title" : "Manager",
-        "salary" : "",
+        "salary" : "1",
         "agency_id" : "4"
     }
 ]

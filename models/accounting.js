@@ -21,20 +21,20 @@ accounting.init(
         allowNull: false,
     },
     card_number:{
-        type: DataTypes.INTEGER,
-        allowNull: false,
+        type: DataTypes.STRING,
+        allowNull: true,
     },
     expiration_dt:{
-        type: DataTypes.INTEGER,
-        allowNull: false,
+        type: DataTypes.STRING,
+        allowNull: true,
     },
     ccv:{
-        type: DataTypes.INTEGER,
-        allowNull: false,
+        type: DataTypes.STRING,
+        allowNull: true,
     },
     card_zipcode:{
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
     },
     customer_id:{
         type: DataTypes.INTEGER,

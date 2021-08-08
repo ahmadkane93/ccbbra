@@ -7,7 +7,8 @@
         "state" : "FL",
         "zip" : "33962",
         "phone" : "239-775-5634",
-        "email" : "JanRSmith@teleworm.us"
+        "email" : "JanRSmith@teleworm.us",
+        "password": "password1234"
     },
     {
         "first_name" : "Michael",
@@ -17,7 +18,8 @@
         "state" : "PA",
         "zip" : "18844",
         "phone" : "570-965-5720",
-        "email" : "MichaelMBullard@dayrep.com"
+        "email" : "MichaelMBullard@dayrep.com",
+        "password": "password1234"
     },
     {
         "first_name" : "Eric",
@@ -27,7 +29,8 @@
         "state" : "MD",
         "zip" : "21201",
         "phone" : "443-989-3851",
-        "email" : "EricRStehle@dayrep.com"
+        "email" : "EricRStehle@dayrep.com",
+        "password": "password1234"
     },
     {
         "first_name" : "Wendell",
@@ -37,7 +40,8 @@
         "state" : "NY",
         "zip" : "12590",
         "phone" : "845-297-3320",
-        "email" : "WendellTLister@teleworm.us"
+        "email" : "WendellTLister@teleworm.us",
+        "password": "password1234"
     },
     {
         "first_name" : "Evelyn",
@@ -47,7 +51,8 @@
         "state" : "CA",
         "zip" : "91302",
         "phone" : "818-878-7761",
-        "email" : "EvelynNSmith@rhyta.com"
+        "email" : "EvelynNSmith@rhyta.com",
+        "password": "password1234"
     },
     {
         "first_name" : "Jessica",
@@ -57,7 +62,8 @@
         "state" : "KS",
         "zip" : "64106",
         "phone" : "913-713-0539",
-        "email" : "JessicaRRyans@jourrapide.com"
+        "email" : "JessicaRRyans@jourrapide.com",
+        "password": "password1234"
     },
     {
         "first_name" : "Stephen",
@@ -67,7 +73,8 @@
         "state" : "AL",
         "zip" : "35801",
         "phone" : "256-436-3045",
-        "email" : "StephenJMorgan@dayrep.com"
+        "email" : "StephenJMorgan@dayrep.com",
+        "password": "password1234"
     },
     {
         "first_name" : "John",
@@ -77,7 +84,8 @@
         "state" : "WA",
         "zip" : "98119",
         "phone" : "360-525-5120",
-        "email" : "JohnMElsberry@armyspy.com"
+        "email" : "JohnMElsberry@armyspy.com",
+        "password": "password1234"
     },
     {
         "first_name" : "Mandy",
@@ -87,7 +95,8 @@
         "state" : "MI",
         "zip" : "49684",
         "phone" : "231-383-8687",
-        "email" : "MandyAThomas@armyspy.com"
+        "email" : "MandyAThomas@armyspy.com",
+        "password": "password1234"
     },
     {
         "first_name" : "Kathleen",
@@ -97,6 +106,7 @@
         "state" : "CA",
         "zip" : "93105",
         "phone" : "805-687-2408",
-        "email" : "KathleenKDutton@armyspy.com"
+        "email" : "KathleenKDutton@armyspy.com",
+        "password": "password1234"
     }
 ]

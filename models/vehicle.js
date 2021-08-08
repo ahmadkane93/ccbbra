@@ -34,11 +34,11 @@ vehicle.init(
     },
     current_milage:{
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
     },
     last_service_dt:{
         type: DataTypes.DATEONLY,
-        allowNull: false,
+        allowNull: true,
     },
     agency_id:{
         type: DataTypes.STRING,
