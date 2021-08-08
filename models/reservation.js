@@ -21,11 +21,11 @@ reservation.init(
     },
     start_dt:{
 
-        type: DataTypes.DATETIME,
+        type: DataTypes.DATE,
         allowNull: true,
     },
     end_dt:{
-        type: DataTypes.DATETIME,
+        type: DataTypes.DATE,
         allowNull: true,
 
     },
