@@ -37,7 +37,7 @@ reservation.belongsTo(vehicle, {
 
 // CUSTOMER (1) : RESERVATION (*)
 customer.hasMany(reservation, {
-    foreignKey: 'customer_id'
+    foreignKey: 'customer_id',
     onDelete: 'CASCADE'
 });
 
