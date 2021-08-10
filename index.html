@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCBB Rental 🚗</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class= "container">
+    <h1>CCBB Rental</h1>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        
+        <!-- Navigation Bar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+            <a class="nav-link" href="#goldMember">About Gold Club</a>
+            <a class="nav-link" href="/findreservation.html">Find Reservation</a>
+            <a class="nav-link" data-bs-toggle="modal" href="#exampleModal">Sign In/Enroll</a>
+
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+<br>
+<br>
+    <!-- User Criteria -->
+    <div class="container-fluid">
+    <input class="col-md-6" placeholder="Location"></input>
+    <input class="col-sm-4" placeholder="Pick Up Date"></input>
+    <input class="col-sm-4" placeholder="Return Date"></input>
+    <input class="age" placeholder="Renter's Age 25+"></input>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Next</button>
+    </div>
+
+
+<!-- Modal Properties-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <input class="col-md-6" placeholder="Username"></input>
+            <input class="col-sm-4" placeholder="Password"></input>
+        
+            
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign In</button>
+        <a type="button" class="btn btn-primary" href="/signup.html">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<!-- Info Graphics -->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/pexels-jose-mueses-1280560.jpg">
+                <div class="card-body">
+                  <h5 class="card-text">Wide Variety of Vehicles</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/pexels-maurício-eugênio-1128527.jpg">
+                <div class="card-body">
+                  <h5 class="card-text">Worldwide Rental Locations</h5>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/pexels-mentatdgt-1399282.jpg">
+                <div class="card-body">
+                  <h5 class="card-text">Earn Rewards</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <h1>Choose Your Vehicle</h1>
+
+      <!-- Shows Cars in Database in Bootstrap cards -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <h1>🚗</h1>
+                <div class="card-body">
+                  <h5 class="card-text">Bentley</h5>
+                  <p>Continentel</p>
+                  <p>2020</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <h1>🚗</h1>
+                <div class="card-body">
+                  <h5 class="card-text">Mitsubishi</h5>
+                  <p>Mirage</p>
+                  <p>2019</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <h1>🚗</h1>
+                <div class="card-body">
+                  <h5 class="card-text">Nissan</h5>
+                  <p>Versa</p>
+                  <p>2021</p>
+                </div>
+              </div>
+              
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+               <a class="btn-success" href="/carlist.html">MORE</a>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h1>Join Our Gold Club</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a id="goldMember"></a>
+          <img src="/assets/pexels-rodnae-productions-7005178.jpg" class="img-thumbnail" alt="...">
+          </div>
+          
+          <div class="col-6">
+            <h5 class="card-title">Perks of Gold Member</h5>
+            <ul>
+              <li>Free Rental Days:
+                Earn 1 rental credit for every qualified car rental. Free Rental Day for 7 credits</li>
+                <li>Guaranteed Upgrades:
+                  In the US and Canada you’re always guaranteed a free upgrade when you reserve using the Midsize rate.</li>
+                  <li>Guaranteed Vehicle:
+                    A guaranteed car (up to Fullsize) with 24-hour notice when you reserve using the Midsize rate (in US and Canada).</li>
+                    <li>Private Airport Delivery:
+                      We'll have your car waiting at most private airports within 50 miles of us (in US and Canada).</li>
+            </ul>
+            <button class="btn btn-success">Join Gold</button>
+          </div>
+
+      
+      
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+<footer><!-- Footer -->
+  <h5>2021 Chitty Chitty Bang Bang Rental. All rights reserved.</h5>
+</footer>
+   
+</html>
