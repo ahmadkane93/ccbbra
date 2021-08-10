@@ -15,9 +15,9 @@ router.post('/', async (req, res) => {
   router.get('/myres/:id', async(req,res) => {
     try {
         const customerData = await customer.findByPk(req.params.id
-        // ,{
-        //   include: [{model: reservation}]
-        // }
+        ,{
+        include: {model: reservation}
+        }
         );
         
         return res.json(customerData);
