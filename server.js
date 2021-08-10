@@ -5,7 +5,7 @@ const routes = require('./controllers');
 
 
 const sequelize = require('./config/connection');
-const { Router } = require('express');
+
 
 
 const app = express();

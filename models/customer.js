@@ -1,4 +1,5 @@
 const { Model,DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class customer extends Model{}
@@ -54,13 +55,20 @@ customer.init(
 
 },
 {
-
+    hooks: {
+        beforeCreate: async (newCustomer) => {
+            newCustomer.password = await bcrypt.hash(newCustomer.password,10);
+            return newCustomer;
+            
+        }
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'customer',
-  }
+},
+
 ); 
 
 module.exports = customer;
