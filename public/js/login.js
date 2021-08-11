@@ -12,7 +12,6 @@ const signupFormHandler = async (event) => {
     const city = document.querySelector('#city-signup').value.trim();
     
   
-    
         
       const response = await fetch('/api/customer', {
         method: 'POST',
