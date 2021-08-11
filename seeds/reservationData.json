@@ -9,8 +9,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "2",
+        "vehicle_id" : "1"
     },
     {
         "payment_type" : "Credit Card",
@@ -22,8 +22,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "1",
+        "vehicle_id" : "2"
     },
     {
         "payment_type" : "Credit Card",
@@ -35,8 +35,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "2",
+        "vehicle_id" : "3"
     },
     {
         "payment_type" : "Credit Card",
@@ -48,8 +48,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "3",
+        "vehicle_id" : "2"
     },
     {
         "payment_type" : "Credit Card",
@@ -61,8 +61,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "10",
+        "vehicle_id" : "4"
     },
     {
         "payment_type" : "Credit Card",
@@ -74,8 +74,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "2",
+        "vehicle_id" : "5"
     },
     {
         "payment_type" : "Credit Card",
@@ -87,8 +87,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "3",
+        "vehicle_id" : "2"
     },
     {
         "payment_type" : "Credit Card",
@@ -100,8 +100,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "4",
+        "vehicle_id" : "4"
     },
     {
         "payment_type" : "Credit Card",
@@ -113,8 +113,8 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "5",
+        "vehicle_id" : "5"
     },
     {
         "payment_type" : "Credit Card",
@@ -126,7 +126,7 @@
         "daily_rate_insurance" : "",
         "fuel_prepay" : "",
         "daily_rate_rental" : "",
-        "customer_id" : "",
-        "vehicle_id" : ""
+        "customer_id" : "6",
+        "vehicle_id" : "4"
     }
 ]

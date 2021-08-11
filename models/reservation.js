@@ -67,7 +67,16 @@ reservation.init(
             model: 'vehicle',
             key: 'id'
         }
-    }
+    },
+    
+        customer_id:{
+            type:DataTypes.INTEGER,
+            reference: {
+                model: 'customer',
+                key: 'id'
+            }
+        }
+    
 
 
 },
