@@ -41,8 +41,12 @@ vehicle.init(
         allowNull: true,
     },
     agency_id:{
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         allowNull: true,
+        reference: {
+            model: 'agency',
+            key: 'id'
+        }
     },
 
 },

@@ -39,6 +39,10 @@ accounting.init(
     customer_id:{
         type: DataTypes.INTEGER,
         allowNull: false,
+        reference: {
+            model: 'customer',
+            key: 'id'
+        }
     },
 
 },
