@@ -14,9 +14,7 @@ router.post('/', async (req, res) => {
     }
   });
 
-  // router.post('/login', passport.authenticate('local')  (req,res) => {
 
-  // });
 
   router.get('/myres/:id', async(req,res) => {
     try {
