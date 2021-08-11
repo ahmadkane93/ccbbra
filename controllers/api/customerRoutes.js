@@ -1,4 +1,6 @@
 const router = require ('express').Router();
+const passport = require ('passport')
+const session = require('express-session')
 
 const { customer, reservation, } = require('../../models')
 
@@ -12,11 +14,17 @@ router.post('/', async (req, res) => {
     }
   });
 
+  // router.post('/login', passport.authenticate('local')  (req,res) => {
+
+  // });
+
   router.get('/myres/:id', async(req,res) => {
     try {
         const customerData = await customer.findByPk(req.params.id
         ,{
+
         include: {model: reservation}
+
         }
         );
         
