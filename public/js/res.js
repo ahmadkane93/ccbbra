@@ -8,7 +8,7 @@ const getReservation = async (event) => {
       const response = await fetch("/api/reservation/"+id, {
         method: 'GET',
       });
-  
+      console.log(result)
       } ;
 
 

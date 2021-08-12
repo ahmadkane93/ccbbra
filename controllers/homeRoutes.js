@@ -1,7 +1,16 @@
 const router = require('express').Router();
+const {agency} = require('../models')
 
-router.get('/', (req,res)=> {
-    res.render('homepage');
+router.get('/', async (req,res)=> {
+    
+    const agencyNames = await agency.findAll({
+        attributes: ['id','agencyName'] 
+        }).catch((err)=> res.json(err));
+
+        const agencys = agencyNames.map((agency)=> agency.get({plain: true}));
+        console.log(agencys)
+    
+    res.render('homepage',{agencys});
 });
 
 router.get('/signup',(req,res)=> {
