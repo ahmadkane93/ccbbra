@@ -22,8 +22,12 @@ router.post('/', async (req, res) => {
         const customerData = await customer.findByPk(req.params.id
         ,{
 
-        include: {model: reservation,
-                  attributes: ['first_name','last_name']
+          attributes: ['id','first_name','last_name'],
+
+        include: {
+         
+          model: reservation
+                  
                 }
 
         }

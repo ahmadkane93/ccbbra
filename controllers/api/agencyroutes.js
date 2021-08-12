@@ -3,13 +3,12 @@ const { agency } = require('../../models')
 
 router.get('/', async(req,res) => {
     try {
-        const agencyName = await agency.findall({
-          
-          include: {
-          attributes:['agencyName']
-        }});
+      console.log ("agency")
+        const agencyNames = await agency.findAll({
+         attributes: ['id','agencyName'] 
+         });
 
-        return res.json(agencyName);
+        return res.json(agencyNames);
     }
     catch (err) {
       res.status(500).json(err);
