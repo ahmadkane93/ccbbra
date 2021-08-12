@@ -8,7 +8,7 @@ router.get('/:id', async(req,res) => {
 
       return res.json(reservationData);
   }
-  catch (error) {
+  catch (err) {
     res.status(500).json(err);
   }
 });
@@ -19,7 +19,7 @@ router.post('/', async (req,res) => {
 
     return res.json(reservationData);
     
-  } catch (error) {
+  } catch (err) {
     res.status(500).json(err);
   }
 })
