@@ -12,6 +12,21 @@
 
 * Local Machine
 
+Open a terminal and run the following command to create a MySQL connection:  
+
+    $ mysql -u <username> -p
+
+Once you have logged in with your mysql credentials, run the following command to create the ccbbra_db database.
+
+    mysql > source db/schema.sql
+
+Open a second terminal window and run the following commands to install dependencies and to populate the database with mock data.
+
+    $ npm install
+
+    $ node seeds/index.js
+
+
 ## Development Workflow
 
 ### _ER Diagram_
