@@ -1,0 +1,38 @@
+[
+    {
+        "types" : "Economy",
+        "price" : "35"
+    },
+    {
+        "types" : "Compact",
+        "price" : "40"
+    },
+    {
+        "types" : "Midsize",
+        "price" : "48"
+    },
+    {
+        "types" : "Standard",
+        "price" : "52"
+    },
+    {
+        "types" : "Midsize Truck",
+        "price" : "52"
+    },
+    {
+        "types" : "Fullsize Truck",
+        "price" : "58"        
+    },
+    {
+        "types" : "Convertible",
+        "price" : "55"
+    },
+    {
+        "types" : "Sport",
+        "price" : "55"
+    },
+    {
+        "types" : "Luxury",
+        "price" : "80"
+    }
+]

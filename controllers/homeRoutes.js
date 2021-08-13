@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {agency} = require('../models')
+const {agency,vehicle} = require('../models')
 
 router.get('/', async (req,res)=> {
     
@@ -8,7 +8,7 @@ router.get('/', async (req,res)=> {
         }).catch((err)=> res.json(err));
 
         const agencys = agencyNames.map((agency)=> agency.get({plain: true}));
-        console.log(agencys)
+        
     
     res.render('homepage',{agencys});
 });
@@ -21,8 +21,15 @@ router.get('/reservation',(req,res)=> {
     res.render('reservation');
 });
 
-router.get('/carlist',(req,res)=> {
-    res.render('carlist');
+router.get('/carlist', async (req,res)=> {
+
+    const cars = await vehicle.findAll({ 
+        }).catch((err)=> res.json(err));
+
+        const car = cars.map((vehicle)=> vehicle.get({plain: true}));
+
+
+    res.render('carlist',{car});
 });
 
 router.get('/login', (req, res) => {

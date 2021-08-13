@@ -4,6 +4,7 @@ const customer = require('./customer');
 const accounting = require('./accounting');
 const vehicle = require('./vehicle');
 const reservation = require('./reservation');
+const vehicleTypes = require('./vehicletypes')
 
 // AGENCY (1) : EMPLOYEE (*)
 agency.hasMany(employee, {
@@ -55,5 +56,5 @@ accounting.belongsTo(customer, {
     foreignKey: 'customer_id'
 });
 
-module.exports = { agency, employee, customer, accounting, vehicle, reservation };
+module.exports = { agency, employee, customer, accounting, vehicle, reservation ,vehicleTypes };
 
