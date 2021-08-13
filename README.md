@@ -6,12 +6,18 @@
 
 ## Run the Application
 
+* [GitHub](https://ckinleydavis.github.io/ccbbra/)
+
+* [Heroku](https://placeholder)
+
+* Local Machine
+
 ## Development Workflow
 
 ### _ER Diagram_
 <blockquote>
 <p align="center">
-  <img alt="VS Code in action" src="./db/ccbbra_model.png">
+  <img alt="VS Code in action" src="./db/ccbbra_model.png" height="60%" width="60%">
 </p>
 </blockquote> 
 
