@@ -1,7 +1,7 @@
 // Requirements
 const sequelize = require('../config/connection');
 
-const { agency, employee, customer, accounting, vehicle, reservation } = require('../models');
+const { agency, employee, customer, accounting, vehicle, reservation, vehicleTypes } = require('../models');
 
 // Data Objects
 const agencyData = require('./agencyData.json');
@@ -10,6 +10,7 @@ const customerData = require('./customerData.json');
 const accountingData = require('./accountingData.json');
 const vehicleData = require('./vehicleData.json');
 const reservationData = require('./reservationData.json');
+const vehicletypes = require('./vehicleTypes.json');
 
 
 // Seed Database Tables
@@ -26,6 +27,8 @@ const seedDatabase = async () => {
     await accounting.bulkCreate(accountingData);
     
     await reservation.bulkCreate(reservationData);
+
+    await vehicleTypes.bulkCreate(vehicletypes)
 
 
 

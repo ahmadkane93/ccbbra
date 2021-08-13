@@ -21,17 +21,19 @@
 <br>
 <div class="row">
     <div class="col">
+      {{#each car}}
       <div class="card" style="width: 18rem;">
         <h1>🚗</h1>
           <div class="card-body">
-            <h5 class="card-text">Bentley</h5>
-            <p>Continentel</p>
-            <p>2020</p>
+            <h5 class="card-text">{{make}}</h5>
+            <p>{{model}}</p>
+            <p>{{model_year}}</p>
           </div>
           <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
             <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
             <label class="btn btn-outline-primary" for="btncheck1">Select</label>
         </div>
     </div>
+    {{/each}}
 
     <script src="./js/login.js"></script>
