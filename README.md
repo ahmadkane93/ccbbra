@@ -26,6 +26,9 @@ Open a second terminal window and run the following commands to install dependen
 
     $ node seeds/index.js
 
+To run the application locally, execute the following on the command-line:
+
+    $ node server.js
 
 ## Development Workflow
 
