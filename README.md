@@ -87,7 +87,7 @@ api/index.js | HTTP Verb | Action | [Used For](https://developer.mozilla.org/en-
 
 ### _UI/UX Wireframe_
 <blockquote align="center">
-<img src="https://www.lipsum.com/images/banners/white_250x250.gif" alt="placeholder">
+<img src="assets\wireframe-image-ccbbra.jpg" alt="wireframe">
 </blockquote>
 <br/>
 <br/>
