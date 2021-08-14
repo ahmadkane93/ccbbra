@@ -19,6 +19,28 @@
     </nav>
 <br>
 <br>
+
+
+ <!-- User Criteria -->
+    <div class="container-fluid">
+     <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Locations</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    {{#each agencys}}
+    <option value={{id}}>{{agencyName}}</option>
+    {{/each}}
+  </select>
+</div>
+    <input class="col-sm-4" placeholder="Pick Up Date"></input>
+    <input class="col-sm-4" placeholder="Return Date"></input>
+    
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Next</button>
+    </div>
+
+<br>
 <div class="row">
     <div class="col">
       {{#each car}}
