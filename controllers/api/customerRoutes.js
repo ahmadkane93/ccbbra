@@ -1,9 +1,10 @@
 const router = require ('express').Router();
 const passport = require ('passport')
-const session = require('express-session')
+
+
 
 const { customer, reservation, } = require('../../models');
-const { rawAttributes } = require('../../models/agency');
+
 
 router.post('/', async (req, res) => {
     try {
@@ -40,10 +41,21 @@ router.post('/', async (req, res) => {
     }
   });
 
+ router.post('/login', (req,res,next) =>{
 
+    passport.authenticate('local', {
+      successRedirect: '/carlist',
+      failureRedirect: '/',
+      failureFlash: false
+    })(req,res,next)
+ })
 
+ router.get('/logout', (req, res) => {
+  req.logout();
+  // req.flash('success_msg', 'You are logged out');
+  res.redirect('/');
+});
 
-  
 
 
   module.exports = router;
