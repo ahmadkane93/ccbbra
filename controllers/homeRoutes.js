@@ -24,6 +24,7 @@ router.get('/reservation',(req,res)=> {
 
 router.get('/carlist',ensureAuthenticated, async (req,res)=> {
 
+
     const cars = await vehicle.findAll({ 
         }).catch((err)=> res.json(err));
 
@@ -31,6 +32,7 @@ router.get('/carlist',ensureAuthenticated, async (req,res)=> {
 
 
     res.render('carlist',{car});
+    
 });
 
 router.get('/login', (req, res) => {
