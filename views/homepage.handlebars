@@ -34,7 +34,7 @@
 </div>
     <input class="col-sm-4" placeholder="Pick Up Date"></input>
     <input class="col-sm-4" placeholder="Return Date"></input>
-    <input class="age" placeholder="Renter's Age 25+"></input>
+    
     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Next</button>
     </div>
 
@@ -102,43 +102,79 @@
 
       <div class="container">
         <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <h1>🚗</h1>
-                <div class="card-body">
-                  <h5 class="card-text">Bentley</h5>
-                  <p>Continentel</p>
-                  <p>2020</p>
-                </div>
-              </div>
+      
+    <div class="col">
+      {{#each car}}
+      <div class="card" style="width: 18rem;">
+        <h1>🚗</h1>
+          <div class="card-body">
+            <h5 class="card-text">{{make}}</h5>
+            <p>{{model}}</p>
+            <p>{{model_year}}</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <a class="btn-success" href="/carlist">MORE DETAILS</a>
+        </div>
+    
+    {{/each}}
           </div>
           <div class="col">
-            <div class="card" style="width: 18rem;">
-              <h1>🚗</h1>
-                <div class="card-body">
-                  <h5 class="card-text">Mitsubishi</h5>
-                  <p>Mirage</p>
-                  <p>2019</p>
-                </div>
-              </div>
+      {{#each car}}
+      <div class="card" style="width: 18rem;">
+        <h1>🚗</h1>
+          <div class="card-body">
+            <h5 class="card-text">{{make}}</h5>
+            <p>{{model}}</p>
+            <p>{{model_year}}</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+           <a class="btn-success" href="/carlist">MORE DETAILS</a>
+        </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 18rem;">
-                <h1>🚗</h1>
-                <div class="card-body">
-                  <h5 class="card-text">Nissan</h5>
-                  <p>Versa</p>
-                  <p>2021</p>
-                </div>
-              </div>
-              
+      {{#each car}}
+      <div class="card" style="width: 18rem;">
+        <h1>🚗</h1>
+          <div class="card-body">
+            <h5 class="card-text">{{make}}</h5>
+            <p>{{model}}</p>
+            <p>{{model_year}}</p>
           </div>
+          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <a class="btn-success" href="/carlist">MORE DETAILS</a>
+        </div>
           <div class="col">
             <div class="card" style="width: 18rem;">
-               <a class="btn-success" href="/carlist">MORE</a>
+               <a class="btn-success" href="/carlist">VIEW MORE CARS</a>
                 </div>
               </div>
         </div>
+      </div>
+
+<div class="container">
+        <table class="table-striped">
+     <thead>
+       <tr>
+         <th scope="col"><h1>Reservation Results</h1></th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>Mark</td>
+       </tr>
+       
+       <tr>
+        <td>Mark</td>
+      </tr>
+      <tr>
+        <td>Mark</td>
+      </tr>
+     </tbody>
+   </table>
+   
       </div>
 
       <br>
