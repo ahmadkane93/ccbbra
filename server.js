@@ -4,12 +4,22 @@ const routes = require('./controllers');
 const exphbs = require('express-handlebars');
 const session = require('express-session');
 const passport = require('passport')
-const flash = require('connect-flash');
 
-require('./config/passport')(passport);
 
 const sequelize = require('./config/connection');
 
+
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
 
 
 
@@ -29,25 +39,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Add express-session and store as Express.js middleware
-app.use(
-  session({
-    secret: 'secret',
-    resave: true,
-    saveUninitialized: true
-  })
-);
+app.use(session(sess));
 
 app.use(passport.initialize());
 app.use(passport.session());
-
-app.use(flash());
-
-app.use(function(req, res, next) {
-  res.locals.success_msg = req.flash('success_msg');
-  res.locals.error_msg = req.flash('error_msg');
-  res.locals.error = req.flash('error');
-  next();
-});
 
 app.use(routes);
 
