@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const {agency,vehicle} = require('../models')
-const {ensureAuthenticated} = require('../config/auth') 
 
 router.get('/', async (req,res)=> {
     
@@ -22,7 +21,7 @@ router.get('/reservation',(req,res)=> {
     res.render('reservation');
 });
 
-router.get('/carlist',ensureAuthenticated, async (req,res)=> {
+router.get('/carlist', async (req,res)=> {
 
     const cars = await vehicle.findAll({ 
         }).catch((err)=> res.json(err));
