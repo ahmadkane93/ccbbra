@@ -38,7 +38,7 @@ passport.serializeUser(function(user, done) {
 
 passport.deserializeUser(function(id, done) {
   user.findByPk(id).then(function(user) {
-    console.log('deserializing user:',user);
+    
     done(null, user);
   }).catch(function(err) {
     if (err) {

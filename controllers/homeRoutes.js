@@ -4,14 +4,9 @@ const {ensureAuthenticated} = require('../config/auth')
 
 router.get('/', async (req,res)=> {
     
-    const agencyNames = await agency.findAll({
-        attributes: ['id','agencyName'] 
-        }).catch((err)=> res.json(err));
-
-        const agencys = agencyNames.map((agency)=> agency.get({plain: true}));
         
     
-    res.render('homepage',{agencys});
+    res.render('homepage');
 });
 
 router.get('/signup',(req,res)=> {
@@ -23,15 +18,21 @@ router.get('/reservation',(req,res)=> {
 });
 
 router.get('/carlist',ensureAuthenticated, async (req,res)=> {
+    
+    const agencyNames = await agency.findAll({
+        attributes: ['id','agencyName'] 
+        }).catch((err)=> res.json(err));
 
+        const agencys = agencyNames.map((agency)=> agency.get({plain: true}));
 
-    const cars = await vehicle.findAll({ 
+        const cars = await vehicle.findAll({ 
         }).catch((err)=> res.json(err));
 
         const car = cars.map((vehicle)=> vehicle.get({plain: true}));
+        const user = req.user.dataValues;
 
-
-    res.render('carlist',{car});
+        
+    res.render('carlist',{car,agencys,user});
     
 });
 
