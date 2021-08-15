@@ -30,7 +30,7 @@ router.get('/carlist',ensureAuthenticated, async (req,res)=> {
 
         const car = cars.map((vehicle)=> vehicle.get({plain: true}));
         const user = req.user.dataValues;
-        
+
         
     res.render('carlist',{car,agencys,user});
     
