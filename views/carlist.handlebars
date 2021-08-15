@@ -16,31 +16,75 @@
           </div>
         </div>
       </div>
+      <h3>Welcome {{user.first_name}}</h3>
     </nav>
 <br>
 <br>
 
+<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
 
- <!-- User Criteria -->
-    <div class="container-fluid">
-     <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Locations</label>
-  </div>
-  <select class="custom-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
-    {{#each agencys}}
+<!--Font Awesome (added because you use icons in your prepend/append)-->
+<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <form class="form-horizontal" method="post">
+     <div class="form-group ">
+      <label class="control-label col-sm-2" for="select">
+       Select a Choice
+      </label>
+      <div class="col-sm-10">
+       <select class="select form-control" id="select" name="select">
+         {{#each agencys}}
     <option value={{id}}>{{agencyName}}</option>
     {{/each}}
-  </select>
-</div>
-    <input class="col-sm-4" placeholder="Pick Up Date"></input>
-    <input class="col-sm-4" placeholder="Return Date"></input>
-    
-    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Next</button>
-    </div>
-
-<br>
+       </select>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label col-sm-2 requiredField" for="date">
+       End Date
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="col-sm-10">
+       <div class="input-group">
+        <div class="input-group-addon">
+         <i class="fa fa-calendar">
+         </i>
+        </div>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+       </div>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label col-sm-2 requiredField" for="date">
+       End Date
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="col-sm-10">
+       <div class="input-group">
+        <div class="input-group-addon">
+         <i class="fa fa-calendar">
+         </i>
+        </div>
+        <input class="form-control form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+       </div>
+      </div>
+     </div>
+     <div class="form-group">
+      <div class="col-sm-10 col-sm-offset-2">
+        <br>
 <div class="row">
     <div class="col">
       {{#each car}}
@@ -53,9 +97,52 @@
           </div>
           <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
             <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Select</label>
+            <button class="btn btn-primary " value= {{id}} name="submit" type="submit">
+        Submit
+       </button>
         </div>
     </div>
     {{/each}}
+       
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
 
-    <script src="./js/login.js"></script>
+
+<!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+<!--  jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        startDate: "date.now",
+         clearBtn: true,
+        format: 'mm/dd/yyyy',
+        orientation: "top auto",
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+
+
+    <script src="./js/res.js"></script>
