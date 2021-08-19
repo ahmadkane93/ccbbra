@@ -8,9 +8,9 @@
 
 ## Run the Application
 
-* [GitHub](https://ckinleydavis.github.io/ccbbra/)
+* [GitHub](https://github.com/ahmadkane93/ccbbra)
 
-* [Heroku](https://placeholder)
+* [Heroku](https://osu-project2-heroku.herokuapp.com/)
 
 * Local Machine &nbsp; <g-emoji class="g-emoji" alias="desktop_computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f5a5.png">🖥️</g-emoji>&nbsp;<g-emoji class="g-emoji" alias="point_down" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f447.png">👇</g-emoji>
 <br/>
